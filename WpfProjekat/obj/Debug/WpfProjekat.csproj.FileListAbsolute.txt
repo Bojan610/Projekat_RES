@@ -1,0 +1,16 @@
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.pdb
+C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csproj.ResolveComReference.cache
