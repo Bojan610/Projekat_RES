@@ -6,19 +6,29 @@
         xmlns:local="clr-namespace:WpfProjekat"
         mc:Ignorable="d"
         Title="ImportWindow" Height="300" Width="500">
-    <Grid Background="AliceBlue">
-        <ComboBox x:Name="comboBoxDrzave" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
-                  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="13" RenderTransformOrigin="0.497,0.472" Margin="10,34,328.6,200.4" SelectionChanged="ComboBoxDrzave_SelectionChanged"  
-        />
+    <Canvas Background="AliceBlue">
+        <Border x:Name="borderDrzava" BorderThickness="2" Canvas.Left="10" Canvas.Top="40">
+            <ComboBox x:Name="comboBoxDrzave" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
+                  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="13" SelectionChanged="ComboBoxDrzave_SelectionChanged"  
+            />
+        </Border>
 
-        <DatePicker FontSize="13" Margin="205,35,171.6,200.4"/>
-        <DatePicker FontSize="13" Margin="357,37,19.6,200.4"/>
-        <Label Content="Pocetni datum:" FontSize="12" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Height="24"/>
-        <Label Content="Krajnji datum:" FontSize="12" HorizontalAlignment="Left" Margin="357,13,0,0" VerticalAlignment="Top" Height="24"/>
-        <Button Content="Fajl sa podacima o potrosnji" FontSize="12" HorizontalAlignment="Left" Margin="63,113,0,0" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonPotrosnja_Click"/>
-        <Button Content="Fajl sa vremenskim podacima" FontSize="12" HorizontalAlignment="Left" Margin="261,113,0,0" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonVreme_Click"/>
+        <DatePicker x:Name="datePocetni" FontSize="13" BorderThickness="2" Canvas.Left="180" Canvas.Top="40" Width="120"/>
+        <DatePicker x:Name="dateKrajnji" FontSize="13" BorderThickness="2" Canvas.Right="30" Canvas.Top="40" Width="120"/>
+        <Label Content="Pocetni datum:" FontSize="12" HorizontalAlignment="Left" Canvas.Left="180" Canvas.Top="10" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Krajnji datum:" FontSize="12" HorizontalAlignment="Left" Canvas.Right="65" Canvas.Top="10" VerticalAlignment="Top" Height="24"/>
+        <Button x:Name="buttonPotrosnja" BorderThickness="2" Content="Fajl sa podacima o potrosnji" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonPotrosnja_Click" Canvas.Left="40" Canvas.Top="120"/>
+        <Button x:Name="buttonVreme" BorderThickness="2" Content="Fajl sa vremenskim podacima" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonVreme_Click" Canvas.Right="40" Canvas.Top="120"/>
         <Rectangle Fill="Gray" HorizontalAlignment="Left" Height="5" Margin="70,214,0,0" Stroke="Gray" VerticalAlignment="Top" Width="356"/>
-        <Button Content="IMPORT" HorizontalAlignment="Left" Margin="199,236,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button Content="IMPORT" HorizontalAlignment="Left" Margin="199,236,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
 
-    </Grid>
+        <Label x:Name="labelaGreskaDrzava" Width="120" Height="25" Canvas.Left="10" Canvas.Top="70" FontSize="9" Foreground="Red"/>
+        <Label x:Name="labelaGreskaPocetniDatum" Width="120" Height="25" FontSize="9" Foreground="Red" Canvas.Left="180" Canvas.Top="70"/>
+        <Label x:Name="labelaGreskaKrajnjiDatum" Width="120" Height="25" FontSize="9" Foreground="Red" Canvas.Left="345" Canvas.Top="70"/>
+        <Label x:Name="labelaGreskaPotrosnja" Width="120" Height="25" FontSize="9" Foreground="Red" Canvas.Left="40" Canvas.Top="150"/>
+        <Label x:Name="labelaGreskaVreme" Width="120" Height="25" FontSize="9" Foreground="Red" Canvas.Right="85" Canvas.Top="150"/>
+
+        <Label x:Name="labelaPotvrdaPotrosnja" Width="120" Height="25" FontSize="9" Canvas.Left="40" Canvas.Top="180" Content=""/>
+        <Label x:Name="labelaPotvrdaVreme" Width="120" Height="25" FontSize="9" Canvas.Right="85" Canvas.Top="180" Content=""/>
+    </Canvas>
 </Window>

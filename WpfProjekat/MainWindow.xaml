@@ -5,39 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProjekat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="800" SizeToContent="WidthAndHeight">
-    <Grid Background="AliceBlue">
+        Title="MainWindow" Height="650" Width="800">
+    <Canvas Background="AliceBlue">
         <DataGrid x:Name="tabela"
-                  Padding="5" BorderBrush="Black" BorderThickness="2" Margin="0,0,-0.4,188"
+                  Padding="5" BorderBrush="Black" BorderThickness="2" Canvas.Top="10" Width="780" Margin="5" Height="400"
                   IsReadOnly="True" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Drzava" x:Name="drzava" Width="120" />
-                <DataGridTextColumn Header="UCT vreme" x:Name="uctVreme" Width="100"/>
-                <DataGridTextColumn Header="Energija" x:Name="energija" Width="120"/>
+                <DataGridTextColumn Header="Drzava" x:Name="drzava"/>
+                <DataGridTextColumn Header="UCT vreme" x:Name="uctVreme"/>
+                <DataGridTextColumn Header="Energija" x:Name="energija" />
                 <DataGridTextColumn Header="Temperatura" x:Name="temperatura"/>
                 <DataGridTextColumn Header="Atm. pritisak" x:Name="pritisak"/>
                 <DataGridTextColumn Header="Rel. vlaznost vazduha" x:Name="vlaznost"/>
-                <DataGridTextColumn Header="Brzina vetra" x:Name="vetar" Width="165"/>
+                <DataGridTextColumn Header="Brzina vetra" x:Name="vetar"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <ComboBox x:Name="comboBoxDrzave" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
-                  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" RenderTransformOrigin="0.497,0.472" Margin="10,464,608.6,115"  
-        />
+        <Border x:Name="borderDrzaveFilter" Canvas.Left="10" Canvas.Top="450" Width="140" BorderThickness="2">
+            <ComboBox x:Name="comboBoxDrzaveFilter" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
+                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
+        </Border>
+        
 
-        <Label Content="Pocetni datum:" Width="145" Margin="246,437,402.6,155"
+        <Label Content="Pocetni datum:" Width="140" Canvas.Left="240" Canvas.Top="450"  
                HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
                FontSize="15"/>
-        <Label Content="Krajinji datum:" Margin="442,437,232.6,155"
-               HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+        <Label Content="Krajinji datum:" Canvas.Left="505" Canvas.Top="450" 
+               HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="140"
                FontSize="15"/>
-        <DatePicker Margin="442,470,211.6,122" FontSize="15" Width="140"/>
-        <DatePicker Margin="244,470,404.6,122" FontSize="15" Width="140"/>
 
-        <Button x:Name="buttonImport" Content="IMPORT" Height="35" Width="145" Margin="416,554,232.6,31" Click="ButtonImport_Click"/>
-        <Button x:Name="buttonExport" Content="EXPORT" Height="35" Width="145" Margin="241,554,407.6,31"/>
-        <Button x:Name="buttonRxit" Content="EXIT" HorizontalAlignment="Left" Margin="639,554,0,0" VerticalAlignment="Top" Width="145" Height="35"/>
-        <Button Content="FILTER" HorizontalAlignment="Left" Margin="10,554,0,0" VerticalAlignment="Top" Width="145" Height="35" Click="Button_Click"/>
+        <DatePicker x:Name="datePocetniFilter" FontSize="15" Width="140" Canvas.Left="240" Canvas.Top="495" BorderThickness="2"/>
+        <DatePicker x:Name="dateKrajnjiFilter" FontSize="15" Width="140" Canvas.Left="505" Canvas.Top="495" BorderThickness="2"/>
 
-    </Grid>
+        <Button x:Name="buttonImport" Content="IMPORT" Height="34" Width="140"  Click="ButtonImport_Click" Canvas.Left="205" Canvas.Top="560"/>
+        <Button x:Name="buttonExport" Content="EXPORT" Height="35" Width="140" Canvas.Right="205" Canvas.Top="560" />
+        <Button x:Name="buttonRxit" Content="EXIT" HorizontalAlignment="Left" Canvas.Right="10" Canvas.Top="560" 
+                VerticalAlignment="Top" Width="140" Height="35" Click="ButtonRxit_Click"/>
+        <Button Content="FILTER" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="560" 
+                VerticalAlignment="Top" Width="140" Height="35" Click="ButtonFilter_Click"/>
+
+        <Label x:Name="labelaGreskaDrzaveFilter" Width="140" Height="30" Foreground="Red" Canvas.Left="10" Canvas.Top="485"/>
+        <Label x:Name="labelaGreskaPocetniFilter" Width="160" Height="30" Foreground="Red" Canvas.Left="240" Canvas.Top="530"/>
+        <Label x:Name="labelaGreskaKrajnjiFilter" Width="160" Height="30" Foreground="Red" Canvas.Left="505" Canvas.Top="530"/>    
+    </Canvas>
 </Window>

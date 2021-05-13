@@ -26,6 +26,73 @@ namespace WpfProjekat
             InitializeComponent();
         }
 
+        public bool Validacija()
+        {
+            bool rez = true;
+
+            if(comboBoxDrzave.SelectedItem == null)
+            {
+                rez = false;
+                borderDrzava.BorderBrush = Brushes.Red;
+                labelaGreskaDrzava.Content = "Nije izabrana drzava!";
+            }
+            else
+            {
+                borderDrzava.BorderBrush = Brushes.Green;
+                labelaGreskaDrzava.Content = "";
+            }
+
+            if(datePocetni.SelectedDate == null)
+            {
+                rez = false;
+                datePocetni.BorderBrush = Brushes.Red;
+                labelaGreskaPocetniDatum.Content = "Pocetni datum nije izabran!";
+            }
+            else
+            {
+                datePocetni.BorderBrush = Brushes.Green;
+                labelaGreskaPocetniDatum.Content = "";
+            }
+
+            if (dateKrajnji.SelectedDate == null)
+            {
+                rez = false;
+                dateKrajnji.BorderBrush = Brushes.Red;
+                labelaGreskaKrajnjiDatum.Content = "Krajnji datum nije izabran!";
+            }
+            else
+            {
+                dateKrajnji.BorderBrush = Brushes.Green;
+                labelaGreskaKrajnjiDatum.Content = "";
+            }
+
+            if(labelaPotvrdaPotrosnja.Content == "")
+            {
+                rez = false;
+                buttonPotrosnja.BorderBrush = Brushes.Red;
+                labelaGreskaPotrosnja.Content = "Nije ucitan file o potrosnji!";
+            }
+            else
+            {
+                buttonPotrosnja.BorderBrush = Brushes.Green;
+                labelaGreskaPotrosnja.Content = "";
+            }
+
+            if (labelaPotvrdaVreme.Content == "")
+            {
+                rez = false;
+                buttonVreme.BorderBrush = Brushes.Red;
+                labelaGreskaVreme.Content = "Nije ucitan file o vremenu!";
+            }
+            else
+            {
+                buttonVreme.BorderBrush = Brushes.Green;
+                labelaGreskaVreme.Content = "";
+            }
+
+            return rez;
+        }
+
         private void ComboBoxDrzave_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -41,18 +108,8 @@ namespace WpfProjekat
             {
                 string fileName = op.FileName;
                 string path = System.IO.Path.GetFullPath(op.FileName);
-                /*Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                DataSet ds = new DataSet();
-                Microsoft.Office.Interop.Excel.Workbook wb = excel.Workbooks.Open(path);
-                foreach (Microsoft.Office.Interop.Excel.Worksheet ws in wb.Worksheets)
-                {
-                    System.Data.DataTable td = new System.Data.DataTable();
-                    td = await Task.Run(() => formofDataTable(ws));
-                    ds.Tables.Add(td);
-                }
-                tabela.ItemsSource = ds.Tables[0].DefaultView;
-
-                wb.Close();*/
+                labelaPotvrdaPotrosnja.Content = op.FileName;
+                
             }
         }
 
@@ -66,18 +123,20 @@ namespace WpfProjekat
             {
                 string fileName = op.FileName;
                 string path = System.IO.Path.GetFullPath(op.FileName);
-                /*Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                DataSet ds = new DataSet();
-                Microsoft.Office.Interop.Excel.Workbook wb = excel.Workbooks.Open(path);
-                foreach (Microsoft.Office.Interop.Excel.Worksheet ws in wb.Worksheets)
-                {
-                    System.Data.DataTable td = new System.Data.DataTable();
-                    td = await Task.Run(() => formofDataTable(ws));
-                    ds.Tables.Add(td);
-                }
-                tabela.ItemsSource = ds.Tables[0].DefaultView;
+                labelaPotvrdaVreme.Content = fileName;
+                
+            }
+        }
 
-                wb.Close();*/
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Validacija())
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Polja nisu dobro popunjena!", "Greska!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
