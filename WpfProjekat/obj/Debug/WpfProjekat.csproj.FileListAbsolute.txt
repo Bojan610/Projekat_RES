@@ -14,3 +14,19 @@ C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csproj.CoreCom
 C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.exe
 C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.pdb
 C:\Users\PC\Desktop\WpfProjekat\WpfProjekat\obj\Debug\WpfProjekat.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.csproj.GenerateResource.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.pdb

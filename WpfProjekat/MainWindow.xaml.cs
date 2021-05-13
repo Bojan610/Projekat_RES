@@ -34,8 +34,8 @@ namespace WpfProjekat
         private void ComboBoxDrzave()
         {
             List<string> drzave = new List<string>();
-            drzave.Add("srbija");
-            drzave.Add("hrvatska");
+            drzave.Add("Srbija");
+            drzave.Add("Hrvatska");
             comboBoxDrzave.ItemsSource = drzave;
         }
 
@@ -93,6 +93,17 @@ namespace WpfProjekat
             }
 
             return dt;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonImport_Click(object sender, RoutedEventArgs e)
+        {
+            ImportWindow importWindow = new ImportWindow();
+            importWindow.ShowDialog();
         }
     }
 }

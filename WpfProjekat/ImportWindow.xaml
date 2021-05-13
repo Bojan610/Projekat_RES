@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfProjekat.ImportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProjekat"
+        mc:Ignorable="d"
+        Title="ImportWindow" Height="300" Width="500">
+    <Grid Background="AliceBlue">
+        <ComboBox x:Name="comboBoxDrzave" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
+                  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="13" RenderTransformOrigin="0.497,0.472" Margin="10,34,328.6,200.4" SelectionChanged="ComboBoxDrzave_SelectionChanged"  
+        />
+
+        <DatePicker FontSize="13" Margin="205,35,171.6,200.4"/>
+        <DatePicker FontSize="13" Margin="357,37,19.6,200.4"/>
+        <Label Content="Pocetni datum:" FontSize="12" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Krajnji datum:" FontSize="12" HorizontalAlignment="Left" Margin="357,13,0,0" VerticalAlignment="Top" Height="24"/>
+        <Button Content="Fajl sa podacima o potrosnji" FontSize="12" HorizontalAlignment="Left" Margin="63,113,0,0" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonPotrosnja_Click"/>
+        <Button Content="Fajl sa vremenskim podacima" FontSize="12" HorizontalAlignment="Left" Margin="261,113,0,0" VerticalAlignment="Top" Width="165" Height="29" Click="ButtonVreme_Click"/>
+        <Rectangle Fill="Gray" HorizontalAlignment="Left" Height="5" Margin="70,214,0,0" Stroke="Gray" VerticalAlignment="Top" Width="356"/>
+        <Button Content="IMPORT" HorizontalAlignment="Left" Margin="199,236,0,0" VerticalAlignment="Top" Width="96"/>
+
+    </Grid>
+</Window>
