@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProjekat"
+        xmlns:viewModel="clr-namespace:Server.ViewModel;assembly=Server"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="800">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
     <Canvas Background="AliceBlue">
         <DataGrid x:Name="tabela"
                   Padding="5" BorderBrush="Black" BorderThickness="2" Canvas.Top="10" Width="780" Margin="5" Height="400"
@@ -23,7 +27,8 @@
 
         <Border x:Name="borderDrzaveFilter" Canvas.Left="10" Canvas.Top="450" Width="140" BorderThickness="2">
             <ComboBox x:Name="comboBoxDrzaveFilter" Text="Izbor drzave" IsEditable="True" IsReadOnly="True" 
-                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
+                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"
+                      SelectedItem="{Binding Filter.DrzavaFilter}"/>
         </Border>
         
 
@@ -34,18 +39,22 @@
                HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="140"
                FontSize="15"/>
 
-        <DatePicker x:Name="datePocetniFilter" FontSize="15" Width="140" Canvas.Left="240" Canvas.Top="495" BorderThickness="2"/>
-        <DatePicker x:Name="dateKrajnjiFilter" FontSize="15" Width="140" Canvas.Left="505" Canvas.Top="495" BorderThickness="2"/>
+        <DatePicker x:Name="datePocetniFilter" FontSize="15" Width="140" Canvas.Left="240" Canvas.Top="495" BorderThickness="2" SelectedDate="{Binding Filter.PocetniDatumFilter}"/>
+        <DatePicker x:Name="dateKrajnjiFilter" FontSize="15" Width="140" Canvas.Left="505" Canvas.Top="495" BorderThickness="2" SelectedDate="{Binding Filter.KrajnjiDatumFilter}"/>
 
-        <Button x:Name="buttonImport" Content="IMPORT" Height="34" Width="140" Click="ImportButton" Canvas.Left="205" Canvas.Top="560"/>
-        <Button x:Name="buttonExport" Content="EXPORT" Height="35" Width="140" Canvas.Right="205" Canvas.Top="560" />
-        <Button x:Name="buttonRxit" Content="EXIT" HorizontalAlignment="Left" Canvas.Right="10" Canvas.Top="560" 
-                VerticalAlignment="Top" Width="140" Height="35" Click="ButtonRxit_Click"/>
+        <Button x:Name="buttonImport" Content="IMPORT" Height="34" Width="140" Canvas.Left="205" Canvas.Top="560"
+                Command="{Binding ButtonImport}"/>
+        <Button x:Name="buttonExport" Content="EXPORT" Height="35" Width="140" Canvas.Right="205" Canvas.Top="560" 
+                Command="{Binding ButtonExport}"/>
+        <Button x:Name="buttonExit" Content="EXIT" HorizontalAlignment="Left" Canvas.Right="10" Canvas.Top="560" 
+                VerticalAlignment="Top" Width="140" Height="35"
+                Command="{Binding ButtonExit}"/>
         <Button Content="FILTER" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="560" 
-                VerticalAlignment="Top" Width="140" Height="35" Click="ButtonFilter_Click"/>
+                VerticalAlignment="Top" Width="140" Height="35" 
+                Command="{Binding ButtonFilter}"/>
 
-        <Label x:Name="labelaGreskaDrzaveFilter" Width="140" Height="30" Foreground="Red" Canvas.Left="10" Canvas.Top="485"/>
-        <Label x:Name="labelaGreskaPocetniFilter" Width="160" Height="30" Foreground="Red" Canvas.Left="240" Canvas.Top="530"/>
-        <Label x:Name="labelaGreskaKrajnjiFilter" Width="160" Height="30" Foreground="Red" Canvas.Left="505" Canvas.Top="530"/>    
+        <Label x:Name="labelaGreskaDrzaveFilter" Content="{Binding Filter.ValidationErrors[Drzava]}" Width="140" Height="30" Foreground="Red" Canvas.Left="10" Canvas.Top="485"/>
+        <Label x:Name="labelaGreskaPocetniFilter" Content="{Binding Filter.ValidationErrors[PocetniDatum]}" Width="160" Height="30" Foreground="Red" Canvas.Left="240" Canvas.Top="530"/>
+        <Label x:Name="labelaGreskaKrajnjiFilter" Content="{Binding Filter.ValidationErrors[KrajnjiDatum]}" Width="160" Height="30" Foreground="Red" Canvas.Left="505" Canvas.Top="530"/>    
     </Canvas>
 </Window>

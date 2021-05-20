@@ -23,14 +23,14 @@ namespace WpfProjekat
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow
+    public partial class MainWindow 
     {
         public MainWindow()
         {
             InitializeComponent();
-            ComboBoxDrzave();
+            //ComboBoxDrzave();
         }
-
+/*
         public bool Validacija()
         {
             bool rez = true;
@@ -81,7 +81,7 @@ namespace WpfProjekat
             drzave.Add("Hrvatska");
             comboBoxDrzaveFilter.ItemsSource = drzave;
         }
-
+       
         private void ImportButton(object sender, RoutedEventArgs e)
         {
             ImportWindow importWindow = new ImportWindow();
@@ -106,5 +106,6 @@ namespace WpfProjekat
             MessageBox.Show("Da li zelite da napustite program?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
             Close();
         }
+        */
     }
 }

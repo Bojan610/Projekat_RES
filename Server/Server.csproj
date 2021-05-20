@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindableBase.cs" />
+    <Compile Include="Model\Filter.cs" />
     <Compile Include="Model\Import.cs" />
     <Compile Include="MyICommand.cs" />
     <Compile Include="OperacijeServer.cs" />
@@ -59,6 +60,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BazaPodataka\BazaPodataka.csproj">
+      <Project>{93180559-7934-44f7-b912-013f1ac85cc3}</Project>
+      <Name>BazaPodataka</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{6bc8a2e9-542a-4645-aee6-a21725c57efe}</Project>
       <Name>Common</Name>
