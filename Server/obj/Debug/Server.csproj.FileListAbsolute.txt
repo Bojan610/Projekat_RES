@@ -1,0 +1,9 @@
+C:\Users\bojan\Desktop\Projekat_RES\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\Projekat_RES\Server\bin\Debug\Server.dll
+C:\Users\bojan\Desktop\Projekat_RES\Server\bin\Debug\Server.pdb
+C:\Users\bojan\Desktop\Projekat_RES\Server\bin\Debug\Common.dll
+C:\Users\bojan\Desktop\Projekat_RES\Server\bin\Debug\Common.pdb
+C:\Users\bojan\Desktop\Projekat_RES\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\bojan\Desktop\Projekat_RES\Server\obj\Debug\Server.dll
+C:\Users\bojan\Desktop\Projekat_RES\Server\obj\Debug\Server.pdb

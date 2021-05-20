@@ -1,0 +1,95 @@
+C:\Users\bojan\Desktop\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\bojan\Desktop\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\UI.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\ImportWindow.g.cs
+C:\Users\bojan\Desktop\WpfProjekat\obj\Debug\ImportWindow.baml
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\UI.csproj.ResolveComReference.cache
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\ImportWindow.g.cs
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\ImportWindow.baml
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\PC\Desktop\Projekat_RES-master\WpfProjekat\obj\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\ImportWindow.g.cs
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\ImportWindow.baml
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\6. semestar\Razvoj softvera\Projekat\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe.config
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\bin\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\ImportWindow.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\App.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.cache
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat_MarkupCompile.lref
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\ImportWindow.baml
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\MainWindow.baml
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.g.resources
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.Properties.Resources.resources
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.exe
+C:\Users\bojan\Desktop\Projekat_RES\WpfProjekat\obj\Debug\WpfProjekat.pdb
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.ResolveComReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\ImportWindow.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\MainWindow.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\App.g.cs
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI_MarkupCompile.cache
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI_MarkupCompile.lref
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\UI.exe.config
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\UI.exe
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\UI.pdb
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\Server.dll
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\Common.dll
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\Server.pdb
+C:\Users\bojan\Desktop\Projekat_RES\UI\bin\Debug\Common.pdb
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\ImportWindow.baml
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\MainWindow.baml
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.g.resources
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.exe
+C:\Users\bojan\Desktop\Projekat_RES\UI\obj\Debug\UI.pdb
