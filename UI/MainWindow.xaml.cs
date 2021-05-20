@@ -81,12 +81,12 @@ namespace WpfProjekat
             drzave.Add("Hrvatska");
             comboBoxDrzaveFilter.ItemsSource = drzave;
         }
-       
+       */
         private void ImportButton(object sender, RoutedEventArgs e)
         {
             ImportWindow importWindow = new ImportWindow();
             importWindow.ShowDialog();
-        }
+        }/*
        
 
         private void ButtonFilter_Click(object sender, RoutedEventArgs e)

@@ -42,7 +42,7 @@
         <DatePicker x:Name="datePocetniFilter" FontSize="15" Width="140" Canvas.Left="240" Canvas.Top="495" BorderThickness="2" SelectedDate="{Binding Filter.PocetniDatumFilter}"/>
         <DatePicker x:Name="dateKrajnjiFilter" FontSize="15" Width="140" Canvas.Left="505" Canvas.Top="495" BorderThickness="2" SelectedDate="{Binding Filter.KrajnjiDatumFilter}"/>
 
-        <Button x:Name="buttonImport" Content="IMPORT" Height="34" Width="140" Canvas.Left="205" Canvas.Top="560"
+        <Button x:Name="buttonImport" Content="IMPORT" Height="34" Width="140" Canvas.Left="205" Canvas.Top="560" Click="ImportButton"
                 Command="{Binding ButtonImport}"/>
         <Button x:Name="buttonExport" Content="EXPORT" Height="35" Width="140" Canvas.Right="205" Canvas.Top="560" 
                 Command="{Binding ButtonExport}"/>
@@ -53,8 +53,8 @@
                 VerticalAlignment="Top" Width="140" Height="35" 
                 Command="{Binding ButtonFilter}"/>
 
-        <Label x:Name="labelaGreskaDrzaveFilter" Content="{Binding Filter.ValidationErrors[Drzava]}" Width="140" Height="30" Foreground="Red" Canvas.Left="10" Canvas.Top="485"/>
-        <Label x:Name="labelaGreskaPocetniFilter" Content="{Binding Filter.ValidationErrors[PocetniDatum]}" Width="160" Height="30" Foreground="Red" Canvas.Left="240" Canvas.Top="530"/>
-        <Label x:Name="labelaGreskaKrajnjiFilter" Content="{Binding Filter.ValidationErrors[KrajnjiDatum]}" Width="160" Height="30" Foreground="Red" Canvas.Left="505" Canvas.Top="530"/>    
+        <Label x:Name="labelaGreskaDrzaveFilter" Content="{Binding Filter.ValidationErrors[DrzavaFilter]}" Width="140" Height="30" Foreground="Red" Canvas.Left="10" Canvas.Top="485"/>
+        <Label x:Name="labelaGreskaPocetniFilter" Content="{Binding Filter.ValidationErrors[PocetniDatumFilter]}" Width="160" Height="30" Foreground="Red" Canvas.Left="240" Canvas.Top="530"/>
+        <Label x:Name="labelaGreskaKrajnjiFilter" Content="{Binding Filter.ValidationErrors[KrajnjiDatumFilter]}" Width="160" Height="30" Foreground="Red" Canvas.Left="505" Canvas.Top="530"/>    
     </Canvas>
 </Window>

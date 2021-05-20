@@ -139,5 +139,3 @@ C:\Users\PC\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\Projekat_RES\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\PC\Desktop\Projekat_RES\UI\obj\Debug\UI.exe
 C:\Users\PC\Desktop\Projekat_RES\UI\obj\Debug\UI.pdb
-C:\Users\PC\Desktop\Projekat_RES\UI\bin\Debug\BazaPodataka.mdf
-C:\Users\PC\Desktop\Projekat_RES\UI\bin\Debug\BazaPodataka_log.ldf

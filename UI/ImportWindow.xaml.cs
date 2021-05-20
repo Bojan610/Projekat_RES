@@ -24,7 +24,7 @@ namespace WpfProjekat
         public ImportWindow()
         {
             InitializeComponent();
-            //this.DataContext = new Server.ViewModel.ImportViewModel();
+            this.DataContext = new Server.ViewModel.ImportViewModel();
         }
 
         /*public bool Validacija()
