@@ -1,0 +1,8 @@
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\bin\Debug\BazaPodataka.mdf
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\bin\Debug\BazaPodataka_log.ldf
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\bin\Debug\BazaPodataka.dll
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\bin\Debug\BazaPodataka.pdb
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\obj\Debug\BazaPodataka.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\obj\Debug\BazaPodataka.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\obj\Debug\BazaPodataka.dll
+C:\Users\bojan\Desktop\Projekat_RES\BazaPodataka\obj\Debug\BazaPodataka.pdb
