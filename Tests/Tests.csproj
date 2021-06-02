@@ -53,11 +53,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EvidencijaPotrosnjeIVremenskihParametara\EvidencijaPotrosnjeIVremenskihParametara.csproj">
-      <Project>{1f7f2df6-867f-45f9-abbc-0b6d40655ef1}</Project>
-      <Name>EvidencijaPotrosnjeIVremenskihParametara</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
