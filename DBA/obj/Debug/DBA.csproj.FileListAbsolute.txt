@@ -1,0 +1,12 @@
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\BazaPodataka.mdf
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\BazaPodataka_log.ldf
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\DBA.exe.config
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\DBA.exe
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\DBA.pdb
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\Common.dll
+C:\Users\bojan\Desktop\Projekat_RES\DBA\bin\Debug\Common.pdb
+C:\Users\bojan\Desktop\Projekat_RES\DBA\obj\Debug\DBA.csprojAssemblyReference.cache
+C:\Users\bojan\Desktop\Projekat_RES\DBA\obj\Debug\DBA.csproj.CoreCompileInputs.cache
+C:\Users\bojan\Desktop\Projekat_RES\DBA\obj\Debug\DBA.csproj.CopyComplete
+C:\Users\bojan\Desktop\Projekat_RES\DBA\obj\Debug\DBA.exe
+C:\Users\bojan\Desktop\Projekat_RES\DBA\obj\Debug\DBA.pdb
