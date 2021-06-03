@@ -10,8 +10,15 @@ namespace Server
 {
     public class Data
     {
-        public static List<VremenskiPodaci> UcitavanjeVremenskihPodataka(string path)
+        public Data()
         {
+
+        }
+        public List<VremenskiPodaci> UcitavanjeVremenskihPodataka(string path)
+        {
+            if (path == null || path == "")
+                return null;
+
             List<VremenskiPodaci> lista = new List<VremenskiPodaci>();
 
             FileStream stream = new FileStream(path, FileMode.Open);
@@ -40,11 +47,13 @@ namespace Server
             return lista;
         }
 
-        public static List<Potrosnja> UcitavanjePotrosnje(string path)
+        public  List<Potrosnja> UcitavanjePotrosnje(string path)
         {
+            if (path == null || path == "")
+                return null;
+
             List<Potrosnja> lista = new List<Potrosnja>();
 
-            //path = HostingEnvironment.MapPath(path);
             FileStream stream = new FileStream(path, FileMode.Open);
             StreamReader sr = new StreamReader(stream);
             string line = "";
@@ -52,15 +61,18 @@ namespace Server
             {
                 string[] tokens = line.Split(',', '\n');
 
-                Potrosnja p = new Potrosnja(tokens[0], tokens[1], DateTime.Parse(tokens[2]), Double.Parse(tokens[3]));
-                lista.Add(p);
-
-                for (int i = 4; i < tokens.Length; i++)
+                for (int i = 0; i < tokens.Length; i++)
                 {
-                    if (i % 4 == 0)
+                    if (i % 3 == 0 || i == 0)
                     {
-                        Potrosnja pom = new Potrosnja(tokens[i], tokens[i + 1], DateTime.Parse(tokens[i + 2]), Double.Parse(tokens[i + 3]));
-                        lista.Add(pom);
+                        foreach (var item in Drzava.drzave)
+                        {
+                            if (item.SifraDrzave == tokens[i])
+                            {
+                                Potrosnja pom = new Potrosnja(item.NazivDrzave, tokens[i], DateTime.Parse(tokens[i + 1]), Double.Parse(tokens[i + 2]));
+                                lista.Add(pom);
+                            }
+                        }
                     }
                 }
             }
@@ -71,9 +83,14 @@ namespace Server
             return lista;
         }
 
-        public static void CuvajPodatke(List<Potrosnja> lista, List<VremenskiPodaci> vremenskiPodaci)
+        public string CuvajPodatke(List<Potrosnja> lista, List<VremenskiPodaci> vremenskiPodaci)
         {
-            string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\ulazni_podaci\\tabela.csv";
+            if (lista == null || vremenskiPodaci == null)
+                //throw new ArgumentNullException("Argumenti ne smeju biti null");
+                return null;
+            
+            //string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\ulazni_podaci\\tabela.csv";
+            string path = "C:\\Users\\PC\\Desktop\\resProjekat\\Projekat_RES-master\\Server\\ulazni_podaci\\tabela.csv";
             string csv = "";
 
             string pom = "";
@@ -92,9 +109,9 @@ namespace Server
                         if (pom == item.MernoMesto)
                         {
                             pom = "";
-                            string pomDatum1 = potrosnja.UctVreme.ToString().Substring(0, 10);
-                            string pomDatum2 = item.Datum.ToString().Substring(0, 10);
-                            if (pomDatum1 == pomDatum2)
+                            string pomDatum1 = potrosnja.UctVreme.ToString();
+                            string pomDatum2 = item.Datum.ToString();
+                            if (potrosnja.UctVreme == item.Datum)
                             {
                                 if (csv != "")
                                 {
@@ -125,15 +142,22 @@ namespace Server
                     }
                 }
             }
-
+            var ret = csv;
             File.WriteAllText(path, csv);
-        }
 
-        public static List<TabelaPodaci> UcitavanjeTabele()
+            return ret;
+        }
+        
+
+        public  List<TabelaPodaci> UcitavanjeTabele(string path)
         {
+            if (path == null || path == "")
+                return null;
+            
             List<TabelaPodaci> lista = new List<TabelaPodaci>();
 
-            string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\ulazni_podaci\\tabela.csv";
+            //string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\ulazni_podaci\\tabela.csv";
+            //string path = "C:\\Users\\PC\\Desktop\\resProjekat\\Projekat_RES-master\\Server\\ulazni_podaci\\tabela.csv";
             FileStream stream = new FileStream(path, FileMode.Open);
             StreamReader sr = new StreamReader(stream);
             string line = "";

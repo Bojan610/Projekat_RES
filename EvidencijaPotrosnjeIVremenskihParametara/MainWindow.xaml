@@ -10,7 +10,7 @@
         <DataGrid x:Name="tabela" ItemsSource="{Binding podaci}" SelectionMode="Single" AutoGenerateColumns="False"
                   Padding="5" BorderBrush="Black" BorderThickness="2" Background="Transparent"
                   Canvas.Top="10" Width="780" Margin="5" Height="400"
-                  IsReadOnly="True" >
+                  IsReadOnly="True" CanUserSortColumns="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Drzava" x:Name="drzava" Binding="{Binding NazivDrzave}"/>
                 <DataGridTextColumn Header="UCT vreme" x:Name="uctVreme" Binding="{Binding UctVreme}"/>
@@ -20,6 +20,7 @@
                 <DataGridTextColumn Header="Rel. vlaznost vazduha" x:Name="vlaznost" Binding="{Binding VlazVazduha}"/>
                 <DataGridTextColumn Header="Brzina vetra" x:Name="vetar" Binding="{Binding BrzinaVetra}"/>
             </DataGrid.Columns>
+
         </DataGrid>
 
         <!--<Border x:Name="borderDrzaveFilter" Canvas.Left="10" Canvas.Top="450" Width="140" BorderThickness="2">

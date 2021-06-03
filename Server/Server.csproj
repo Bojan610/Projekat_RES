@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <Compile Include="Filter.cs" />
     <Compile Include="Klase\Drzava.cs" />
+    <Compile Include="Klase\IDrzava.cs" />
     <Compile Include="Klase\VremenskiPodaci.cs" />
     <Compile Include="Klase\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,9 +53,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="export\export.csv" />
-    <None Include="ulazni_podaci\podaci_o_potrosnji.csv" />
+    <None Include="ulazni_podaci\potrosnja energije\podaci_o_potrosnji.csv" />
+    <None Include="ulazni_podaci\potrosnja energije\PotrosnjaEnergije.csv" />
     <None Include="ulazni_podaci\tabela.csv" />
-    <None Include="ulazni_podaci\vremenski_podaci.csv" />
+    <None Include="ulazni_podaci\vremenski podaci\Beograd.csv" />
+    <None Include="ulazni_podaci\vremenski podaci\Berlin.csv" />
+    <None Include="ulazni_podaci\vremenski podaci\Rim.csv" />
+    <None Include="ulazni_podaci\vremenski podaci\vremenski_podaci.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

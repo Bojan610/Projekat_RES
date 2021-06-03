@@ -4,6 +4,7 @@ using Server.Klase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
     /// <summary>
     /// Interaction logic for ImportWindow.xaml
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public partial class ImportWindow : Window
     {
         public ImportWindow()
@@ -125,8 +127,9 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
             if (Validacija())
             {
                 List<Potrosnja> potrosnja = new List<Potrosnja>();
+                Data data = new Data();
 
-                foreach(var item in Data.UcitavanjePotrosnje(labelaPotvrdaPotrosnja.Content.ToString()))
+                foreach(var item in data.UcitavanjePotrosnje(labelaPotvrdaPotrosnja.Content.ToString()))
                 {
                     if (comboBoxDrzave.SelectedItem.ToString() == item.NazivDrzave && item.UctVreme >= datePocetni.SelectedDate && item.UctVreme <= dateKrajnji.SelectedDate)
                     {
@@ -148,7 +151,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
 
                 List<VremenskiPodaci> vremenskiPodaci = new List<VremenskiPodaci>();
 
-                foreach (var item in Data.UcitavanjeVremenskihPodataka(labelaPotvrdaVreme.Content.ToString()))
+                foreach (var item in data.UcitavanjeVremenskihPodataka(labelaPotvrdaVreme.Content.ToString()))
                 {
                     if(item.Datum >= datePocetni.SelectedDate && item.Datum <= dateKrajnji.SelectedDate)
                     {
@@ -156,9 +159,9 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
                     }
                 }
                 
-                Data.CuvajPodatke(potrosnja, vremenskiPodaci);
+                data.CuvajPodatke(potrosnja, vremenskiPodaci);
 
-                foreach(var item in Data.UcitavanjeTabele())
+                foreach(var item in data.UcitavanjeTabele("C:\\Users\\PC\\Desktop\\resProjekat\\Projekat_RES-master\\Server\\ulazni_podaci\\tabela.csv"))
                 {
                     if(comboBoxDrzave.SelectedItem.ToString() == item.NazivDrzave)
                     {
@@ -166,7 +169,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
                     }
                 }
 
-                BazaPodataka.BazaPodataka.UpisUBazu(potrosnja, vremenskiPodaci, listDrzave);
+                //BazaPodataka.BazaPodataka.UpisUBazu(potrosnja, vremenskiPodaci, listDrzave);
 
                 this.Close();
             }

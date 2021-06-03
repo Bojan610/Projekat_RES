@@ -35,6 +35,24 @@ namespace Server.Klase
 
         public VremenskiPodaci(string mernoMesto, double temperatura, double atmPritisak, double vlaznostVazduha, double brzinaVetra, DateTime datum)
         {
+            if (mernoMesto == null || datum == new DateTime())
+                throw new ArgumentNullException("Argumenti ne smeju biti null");
+
+            if (mernoMesto.Trim() == "")
+                throw new ArgumentException("Merno mesto mora imati naziv");
+
+            if (atmPritisak < 0)
+                throw new ArgumentException("Atmosferski pritisak mora biti pozitivan");
+
+            if (vlaznostVazduha < 0)
+                throw new ArgumentException("Vlaznost vazduha mora biti pozitivna");
+
+            if (brzinaVetra < 0)
+                throw new ArgumentException("Brzina vetra mora biti pozitivna");
+
+            if (Char.IsLower(char.Parse(mernoMesto.Substring(0, 1))))
+                throw new ArgumentException("Naziv mernog mesta mora poceti velikim slovom");
+
             MernoMesto = mernoMesto;
             Temperatura = temperatura;
             AtmPritisak = atmPritisak;
@@ -42,5 +60,6 @@ namespace Server.Klase
             BrzinaVetra = brzinaVetra;
             Datum = datum;
         }
+
     }
 }

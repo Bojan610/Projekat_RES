@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPodataka", "BazaPodataka\BazaPodataka.csproj", "{07ABFF8A-F089-402D-A012-BF119E1CCADC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C6DA911D-CA62-4D75-8DDA-6A87F6E0C44E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{07ABFF8A-F089-402D-A012-BF119E1CCADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07ABFF8A-F089-402D-A012-BF119E1CCADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07ABFF8A-F089-402D-A012-BF119E1CCADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DA911D-CA62-4D75-8DDA-6A87F6E0C44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DA911D-CA62-4D75-8DDA-6A87F6E0C44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DA911D-CA62-4D75-8DDA-6A87F6E0C44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DA911D-CA62-4D75-8DDA-6A87F6E0C44E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

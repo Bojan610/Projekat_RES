@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public partial class MainWindow : Window
     {
         public static BindingList<TabelaPodaci> podaci { get; set; }
@@ -102,27 +104,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
 
             return rez;
         }
-
-        //private void ComboBoxDrzave()
-        //{
-        //    Drzava.drzave = new List<Drzava>();
-        //    Drzava.drzave.Add(new Drzava("Srbija", "SE", "Beograd"));
-        //    Drzava.drzave.Add(new Drzava("Albanija", "AL", "Tirana"));
-        //    Drzava.drzave.Add(new Drzava("Nemacka", "DE", "Berlin"));
-        //    Drzava.drzave.Add(new Drzava("Italija", "IT", "Rim"));
-        //    Drzava.drzave.Add(new Drzava("Litvanija", "LT", "Vilnus"));
-        //    Drzava.drzave.Add(new Drzava("Poljska", "PL", "Lodj"));
-        //    Drzava.drzave.Add(new Drzava("Norveska", "NO", "Oslo"));
-        //    Drzava.drzave.Add(new Drzava("Hrvatska", "HR", "Zagreb"));
-        //    Drzava.drzave.Add(new Drzava("Holandija", "NL", "Amsterdam"));
-        //    Drzava.drzave.Add(new Drzava("Rumunija", "RO", "Temisvar"));
-        //    List<string> nazivi = new List<string>();
-        //    foreach(var item in Drzava.drzave)
-        //    {
-        //        nazivi.Add(item.NazivDrzave);
-        //    }
-        //    comboBoxDrzaveFilter.ItemsSource = nazivi;
-        //}
+        
 
         private void ImportButton(object sender, RoutedEventArgs e)
         {
@@ -136,32 +118,28 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
         {
             if (Validacija())
             {
-                int brojac = 0;
-                List<TabelaPodaci> pom = Data.UcitavanjeTabele();
-                foreach (var item in pom)
+                var brojac = 0;
+                foreach (var item in Drzava.drzave)
                 {
-                    Drzava pomDrzava = new Drzava(textBoxNaziv.ToString(), textBoxSifra.ToString(), textBoxMernoMesto.ToString());
-
-                    if (Drzava.drzave.Contains(pomDrzava))
+                    if (textBoxNaziv.Text == item.NazivDrzave && textBoxSifra.Text == item.SifraDrzave && textBoxMernoMesto.Text == item.NazivMernogMesta)
                     {
-                        if (pomDrzava.NazivDrzave == item.NazivDrzave && item.UctVreme >= datePocetniFilter.SelectedDate && item.UctVreme <= dateKrajnjiFilter.SelectedDate)
+                        MainWindow.podaci.Clear();
+                        Filter filter = new Filter();
+                        foreach(var item2 in filter.FiltriranjePodataka(item, (DateTime)datePocetniFilter.SelectedDate, (DateTime)dateKrajnjiFilter.SelectedDate))
                         {
-                            brojac++;
-                            continue;
-                        }
-                        else
-                        {
-                            try
-                            {
-                                podaci.RemoveAt(brojac);
-                            }
-                            catch (Exception)
-                            {
-                                continue;
-                            }
+                            MainWindow.podaci.Add(item2);
                         }
                     }
+                    else
+                    {
+                        brojac++;
+                    }
                 }
+                if (brojac == Drzava.drzave.Count)
+                {
+                    MessageBox.Show("Uneta drzava ne postoji!", "Greska!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
                 tabela.Items.Refresh();
             }
             else
@@ -172,15 +150,17 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
         
         private void ButtonExport_Click(object sender, RoutedEventArgs e)
         {
-           
-            string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\export\\export.csv";
+            //string path = "C:\\Users\\bojan\\Desktop\\6. semestar\\Razvoj softvera\\Projekat\\Projekat_RES\\Server\\export\\export.csv";
+
+            string path = "C:\\Users\\PC\\Desktop\\resProjekat\\Projekat_RES-master\\Server\\export\\export.csv";
             string csv = "";
+            Data data = new Data();
 
-            List<TabelaPodaci> pomLista = Data.UcitavanjeTabele();
+            List<TabelaPodaci> pomLista = data.UcitavanjeTabele("C:\\Users\\PC\\Desktop\\resProjekat\\Projekat_RES-master\\Server\\ulazni_podaci\\tabela.csv");
 
-            foreach(var item in pomLista)
+            foreach (var item in pomLista)
             {
-                if(csv != "")
+                if (csv != "")
                 {
                     csv = csv + "\n" + String.Format($"{item.NazivDrzave},{item.SifraDrzave},{item.MernoMesto},{item.UctVreme},{item.KolicinaEnergije},{item.Temperatura},{item.AtmPritisak},{item.VlazVazduha},{item.BrzinaVetra}");
                 }

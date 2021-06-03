@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace BazaPodataka
 {
     public class BazaPodataka
     {
+        [ExcludeFromCodeCoverage]
         public static void UpisUBazu(List<Potrosnja> potrosnja, List<VremenskiPodaci> vremenskiPodaci, List<Drzava> drzave)
         {
             SqlConnection thisConnection = new SqlConnection(@"Data Source=LAPTOP-L3HCB0JI\SQLEXPRESS;Initial Catalog=RES_Projakat;Integrated Security=True");
