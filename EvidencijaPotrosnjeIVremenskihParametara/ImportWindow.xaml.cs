@@ -169,7 +169,7 @@ namespace EvidencijaPotrosnjeIVremenskihParametara
                     }
                 }
 
-                //BazaPodataka.BazaPodataka.UpisUBazu(potrosnja, vremenskiPodaci, listDrzave);
+                BazaPodataka.BazaPodataka.UpisUBazu(potrosnja, vremenskiPodaci, listDrzave);
 
                 this.Close();
             }

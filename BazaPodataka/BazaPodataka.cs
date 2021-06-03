@@ -93,6 +93,8 @@ namespace BazaPodataka
 
 
             thisConnection.Close();
+
+            //ovo je proba
         }
     }
 }
